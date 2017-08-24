@@ -15,6 +15,7 @@ ORANGE COLOR #e67e22
 
 html,
 body {
+    background-color: #fff;
     color: #555;
     font-family: 'Lato', 'Arial', sans-serif;
     font-weight: 300;
@@ -23,7 +24,7 @@ body {
     overflow-x: hidden;
 }
 
-.clearfix {zoom: 1}
+.clearfix {zoom: 1;}
 .clearfix:after {
     content: '.';
     clear: both;
@@ -64,7 +65,7 @@ h3 {
 }
 
 h1 {
-    margin: 0;
+    margin-top: 0;
     margin-bottom: 20px;
     color: #fff;
     font-size: 240%;
@@ -132,7 +133,7 @@ h2:after {
     /* secrets to align text and icons */
     line-height: 120%;
     vertical-align: middle;
-    margin-top: -4px;
+    margin-top: -5px;
     
 }
 
@@ -166,7 +167,7 @@ a:active {
 */
 .btn:link,
 .btn:visited,
-input[type=submit]{
+input[type=submit] {
     display: inline-block;
     padding: 10px 30px;
     font-weight: 300;
