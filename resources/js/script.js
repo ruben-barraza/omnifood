@@ -85,20 +85,39 @@ $(document).ready(function() {
         offset: '50%'
     });
     
+    /* Mobile navi */
+    $('.js--nav-icon').click(function() {
+        var nav = $('.js--main-nav');
+        var icon = $('.js--nav-icon i');
+        nav.slideToggle(200);
+        if (icon.hasClass('ion-navicon-round')) {
+            icon.addClass('ion-close-round');
+            icon.removeClass('ion-navicon-round');
+        } else {
+            icon.addClass('ion-navicon-round');
+            icon.removeClass('ion-close-round');
+        }      
+    });
+
+    /* Maps */
+    var map = new GMaps({
+        div: '.map',
+        lat: 29.0856856,
+        lng: -111.0000011,
+        zoom: 13
+    });
+    
+    map.addMarker({
+        lat: 29.0856856,
+        lng: -111.0132939,
+        title: 'Hermosillo',
+        infoWindow: {
+            content: '<p>Hermosillo Headquarters</p>'
+        }
+    });
+    
 }); 
 
 
-/* Mobile navi */
-$('.js--nav-icon').click(function() {
-    var nav = $('.js--main-nav');
-    var icon = $('.js--nav-icon i');
-    nav.slideToggle(200);
-    if (icon.hasClass('ion-navicon-round')) {
-        icon.addClass('ion-close-round');
-        icon.removeClass('ion-navicon-round');
-    } else {
-        icon.addClass('ion-navicon-round');
-        icon.removeClass('ion-close-round');
-    }      
-});
+
 
